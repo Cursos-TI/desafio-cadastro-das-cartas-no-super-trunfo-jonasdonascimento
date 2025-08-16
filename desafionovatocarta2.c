@@ -2,39 +2,48 @@
 
 int main() {
 
-char codigo_carta[50], nome_cidade[50], estado[50] = "";
-int populacao, pontos_turisticos = 0;
-float area, PIB = 0.0;
+char estado[50] = "Bahia";
+char codigo_carta[50] = "B02";
+char nome_cidade[50] = "Salvador";
+int populacao = 241;
+int pontos_turisticos = 10;
+float area = 693;
+float PIB = 62;
+float Densidade_populacional = area + populacao / 2;
+float pib_per_capta = PIB + populacao / 2;
 
-printf("Digite o estado:\n");
-scanf("%s", estado);
 
-printf("digite o codigo da carta:\n");
-scanf("%s", codigo_carta);
+    printf("Digite o estado:\n");
+    scanf("%s", estado);
 
-printf("Informe o nome da cidade:\n");
-scanf("%s", nome_cidade);
+    printf("digite o codigo da carta:\n");
+    scanf("%s", codigo_carta);
 
-printf("Informe a população:\n");
-scanf("%d", &populacao);
+    printf("Informe o nome da cidade:\n");
+    scanf("%s", nome_cidade);
 
-printf("Informe a area:\n");
-scanf("%f", &area);
+    printf("Informe a população:\n");
+    scanf("%d", &populacao);
 
-printf("Informe o PIB:\n");
-scanf("%f", &PIB);
+    printf("Informe a area:\n");
+    scanf("%f", &area);
 
-printf("Quantos pontos turisticos?:\n");
-scanf("%d", &pontos_turisticos);
+    printf("Informe o PIB:\n");
+    scanf("%f", &PIB);
 
-printf("Dados da carta 2:\n");
-printf("Estado: %s.\n", estado);
-printf("Codigo: %s.\n", codigo_carta);
-printf("Nome da cidade: %s.\n", nome_cidade);
-printf("Populacao: %d.mil habitantes\n", populacao);
-printf("Area: %.2f.km\n", area);
-printf("PIB: %.2f.milhoes de reais\n", PIB);
-printf("Pontos turisticos: %d.\n", pontos_turisticos);
+    printf("Quantos pontos turisticos?:\n");
+    scanf("%d", &pontos_turisticos);
+
+    printf("Dados da carta 2:\n");
+    printf("Estado: %s.\n", estado);
+    printf("Codigo: %s.\n", codigo_carta);
+    printf("Nome da cidade: %s.\n", nome_cidade);
+    printf("Populacao: %d.mil habitantes\n", populacao);
+    printf("Area: %.2f.km\n", area);
+    printf("PIB: %.2f.milhoes de reais\n", PIB);
+    printf("Pontos turisticos: %d.\n", pontos_turisticos);
+    printf("Densidade populacional: %.2f.\n", Densidade_populacional);
+    printf("PIB per capta: %.2f.\n", pib_per_capta);
 
 
  }
