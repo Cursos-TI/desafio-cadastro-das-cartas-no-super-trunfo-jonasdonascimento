@@ -2,9 +2,14 @@
 
 int main() {
 
-char codigo_carta[50], nome_cidade[50], estado[50] = "";
-int populacao, pontos_turisticos = 0;
-float area, PIB = 0.0;
+char estado[50] = "Serjipe";
+char codigo_carta[50] = "A01";
+char nome_cidade[50] = "Aracaju";
+int populacao = 602;
+int pontos_turisticos = 5;
+float area = 181;
+float PIB = 18;
+float media = area + populacao / 2;
 
 printf("Digite o estado:\n");
 scanf("%s", estado);
@@ -27,6 +32,9 @@ scanf("%f", &PIB);
 printf("Quantos pontos turisticos?:\n");
 scanf("%d", &pontos_turisticos);
 
+
+
+
 printf("Dados da carta 1:\n");
 printf("Estado: %s.\n", estado);
 printf("Codigo: %s.\n", codigo_carta);
@@ -35,6 +43,7 @@ printf("Populacao: %d.mil habitantes\n", populacao);
 printf("Area: %.2f.km\n", area);
 printf("PIB: %.2f.milhoes de reais\n", PIB);
 printf("Pontos turisticos: %d.\n", pontos_turisticos);
+printf("Densidade populacional: %.2f", media);
 
 
  }
