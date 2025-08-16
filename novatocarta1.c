@@ -9,8 +9,7 @@ int populacao = 602;
 int pontos_turisticos = 5;
 float area = 181;
 float PIB = 18;
-float Densidade_populacional = area + populacao / 2;
-float pib_per_capta = PIB + populacao / 2;
+
 
 printf("Digite o estado:\n");
 scanf("%s", estado);
@@ -34,8 +33,6 @@ printf("Quantos pontos turisticos?:\n");
 scanf("%d", &pontos_turisticos);
 
 
-
-
 printf("Dados da carta 1:\n");
 printf("Estado: %s.\n", estado);
 printf("Codigo: %s.\n", codigo_carta);
@@ -44,7 +41,5 @@ printf("Populacao: %d.mil habitantes\n", populacao);
 printf("Area: %.2f.km\n", area);
 printf("PIB: %.2f.milhoes de reais\n", PIB);
 printf("Pontos turisticos: %d.\n", pontos_turisticos);
-printf("Densidade populacional: %.2f.\n", Densidade_populacional);
-printf("PIB per capta: %.2f.\n", pib_per_capta);
 
  }
